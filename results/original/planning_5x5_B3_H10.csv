@@ -1,0 +1,12 @@
+config,solve_pct,n_paired_vs_PNS,geomean_vs_PNS_paired,wilcoxon_p_paired
+PNS,40.0,24,1.0,1.0
+WPNS,46.7,22,0.877,0.3301
+DeepPN(R.4),0.0,0,nan,1.0
++data,53.3,24,0.495,0.0
++lambda,45.0,22,0.74,0.0064
++R,38.3,23,0.983,0.1454
+ADDPNS,45.0,22,0.757,0.0064
+ADDPNS+data,48.3,22,0.908,0.6034
+ADDPNS+bandit,6.7,4,1.725,0.8551
+df-pn,100.0,24,0.038,0.0
+PN2,50.0,24,1.859,0.0001

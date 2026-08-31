@@ -1,0 +1,6 @@
+# The ADDPNS reference implementation deliberately has no third-party
+# dependencies: the engine, the domains, and the statistics (bootstrap
+# confidence intervals and the Wilcoxon signed-rank test) are pure standard
+# library, so results reproduce on a bare interpreter.
+#
+# Python 3.9 or newer.

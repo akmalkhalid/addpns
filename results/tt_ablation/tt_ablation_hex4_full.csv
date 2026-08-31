@@ -1,0 +1,7 @@
+config,solve_pct,own_solved_n,own_mean_nodes,n_paired_vs_PNS,geomean_vs_PNS,PNS_ci_lo,PNS_ci_hi,wilcoxon_p_vs_PNS,n_paired_vs_PNS_TT,geomean_vs_PNS_TT,TT_ci_lo,TT_ci_hi,wilcoxon_p_vs_PNS_TT,mean_stored_nodes,mean_time_s
+PNS,6.2,1,104264,1,1.0,nan,nan,1.0,1,6.386,nan,nan,1.0,141829,9.2869
++data,6.2,1,104264,1,1.0,nan,nan,1.0,1,6.386,nan,nan,1.0,141829,11.6403
+PNS+TT,100.0,16,29929.6,1,0.157,nan,nan,1.0,16,1.0,1.0,1.0,1.0,145557.3,2.8899
+PNS+TT+data,100.0,16,29929.6,1,0.157,nan,nan,1.0,16,1.0,1.0,1.0,1.0,145557.3,2.9762
+ADDPNS+TT+data,0.0,0,nan,0,nan,nan,nan,1.0,0,nan,nan,nan,1.0,nan,nan
+df-pn,100.0,16,62327.8,1,0.264,nan,nan,1.0,16,2.153,1.938,2.411,0.0005,47276.8,3.4341

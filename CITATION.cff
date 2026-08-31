@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "ADDPNS: Adaptive, Data-Driven Proof-Number Search"
+message: "If you use this software, please cite the accompanying article."
+type: software
+authors:
+  - family-names: Khalid
+    given-names: Mohd Nor Akmal
+    affiliation: Universiti Kebangsaan Malaysia
+  - family-names: Iida
+    given-names: Hiroyuki
+    affiliation: Japan Advanced Institute of Science and Technology
+license: MIT
+preferred-citation:
+  type: article
+  title: "Proof-Number Search Revisited: A Unifying Framework and Empirical Study of Adaptive, Data-Driven Guidance"
+  authors:
+    - family-names: Khalid
+      given-names: Mohd Nor Akmal
+    - family-names: Iida
+      given-names: Hiroyuki
+  journal: "ICGA Journal"
+  year: 2026
