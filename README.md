@@ -3,8 +3,8 @@
 Reference implementation, benchmark domains, and result files for
 
 > M. N. A. Khalid and H. Iida.
-> *Proof-Number Search Revisited: A Unifying Framework and Empirical Study of
-> Adaptive, Data-Driven Guidance.* ICGA Journal.
+> *Proof-Number Search Revisited: Disentangling Control Rules, State-Space
+> Representation, and Leaf Initialization.* ICGA Journal.
 
 Every algorithm in the paper is a configuration of **one** engine, so the
 comparisons differ only in the components under study — move generation,
@@ -43,7 +43,7 @@ pure standard library, so a fresh interpreter reproduces the results exactly.
 | `addpns/controller.py` | The lightweight online controller (λ from the table hit rate, R from the flip rate) and the contextual-bandit variant. |
 | `addpns/games.py` | Hex, Connect Four, Othello, and the synthetic AND/OR trees used as correctness ground truth. |
 | `addpns/planning.py` | The fault-tolerant planning domain and its instance generator. |
-| `addpns/run_ablation.py` | Board-game ablation (Tables 3). |
+| `addpns/run_ablation.py` | Board-game ablation (Table 3). |
 | `addpns/planning_benchmark.py` | Planning ablation (Table 4). |
 | `addpns/run_tt_ablation.py` | **New.** The controlled transposition-table comparison (Table 5) and the enlarged-instance study (Table 6). |
 | `results/original/` | Raw CSVs and reports behind Tables 3 and 4. |
@@ -141,6 +141,12 @@ Manhattan distance), and the fraction of the fault budget remaining. The
 Manhattan distance term is the one that carries the effect reported in the
 paper.
 
+**Leaf-model weights.** The logistic leaf model uses one hand-set weight vector,
+`[0.0, 0.8, 1.2, -0.3]` with bias 0, in every domain (`make_logistic_leaf_model`
+in `addpns/controller.py`). The weights are not fitted to data, and nothing is
+learned before or during the search. For Hex and Othello, whose feature vectors
+have two entries, only the first two weights apply.
+
 For contrast, the board-game feature vectors are deliberately minimal, and two
 of them are too weak to discriminate: `Hex.features` returns only a bias and the
 fraction of empty cells, which is a function of ply count alone, so at a fixed
@@ -198,8 +204,8 @@ is not guaranteed to converge in the fewest sweeps in that case.
 ```bibtex
 @article{Khalid2026PNSRevisited,
   author  = {Khalid, Mohd Nor Akmal and Iida, Hiroyuki},
-  title   = {Proof-Number Search Revisited: A Unifying Framework and Empirical
-             Study of Adaptive, Data-Driven Guidance},
+  title   = {Proof-Number Search Revisited: Disentangling Control Rules,
+             State-Space Representation, and Leaf Initialization},
   journal = {ICGA Journal},
   year    = {2026}
 }
