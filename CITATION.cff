@@ -2,6 +2,9 @@ cff-version: 1.2.0
 title: "ADDPNS: Adaptive, Data-Driven Proof-Number Search"
 message: "If you use this software, please cite the accompanying article."
 type: software
+version: 1.1.0
+date-released: 2026-11-22
+repository-code: "https://github.com/akmalkhalid/addpns"
 authors:
   - family-names: Khalid
     given-names: Mohd Nor Akmal
@@ -12,7 +15,7 @@ authors:
 license: MIT
 preferred-citation:
   type: article
-  title: "Proof-Number Search Revisited: A Unifying Framework and Empirical Study of Adaptive, Data-Driven Guidance"
+  title: "Proof-Number Search Revisited: Disentangling Control Rules, State-Space Representation, and Leaf Initialization"
   authors:
     - family-names: Khalid
       given-names: Mohd Nor Akmal
